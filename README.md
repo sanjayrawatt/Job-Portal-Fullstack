@@ -2,6 +2,38 @@
 
 A full-stack job portal application that connects job seekers with employers. Built with React, Node.js, Express, and MongoDB.
 
+## Deployment
+
+This application is deployed on Vercel with separate deployments for frontend and backend.
+
+### Live Application
+
+- **Frontend**: [https://job-portal-fullstack-client-rho.vercel.app/](https://job-portal-fullstack-client-rho.vercel.app/)
+- **Backend API**: [https://job-portal-fullstack-server-ashen.vercel.app/](https://job-portal-fullstack-server-ashen.vercel.app/)
+
+### Deployment Configuration
+
+Both client and server include `vercel.json` configuration files for seamless deployment on Vercel.
+
+#### Backend Deployment
+
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Import the project to Vercel
+3. Set the root directory to `server`
+4. Add all required environment variables in Vercel project settings
+5. Deploy
+
+#### Frontend Deployment
+
+1. Import the project to Vercel
+2. Set the root directory to `client`
+3. Add environment variables:
+   - `VITE_BACKEND_URL` - Set to your deployed backend URL
+   - `VITE_CLERK_PUBLISHABLE_KEY` - Your Clerk publishable key
+4. Deploy
+
+**Note**: Make sure to update the `VITE_BACKEND_URL` in your frontend environment variables to point to the deployed backend URL.
+
 ## Features
 
 ### For Job Seekers
@@ -221,37 +253,6 @@ The application will be available at:
 - `npm run server` - Start with nodemon (development)
 - `npm start` - Start production server
 
-## Deployment
-
-This application is deployed on Vercel with separate deployments for frontend and backend.
-
-### Live Application
-
-- **Frontend**: [https://job-portal-fullstack-client-rho.vercel.app/](https://job-portal-fullstack-client-rho.vercel.app/)
-- **Backend API**: [https://job-portal-fullstack-server-ashen.vercel.app/](https://job-portal-fullstack-server-ashen.vercel.app/)
-
-### Deployment Configuration
-
-Both client and server include `vercel.json` configuration files for seamless deployment on Vercel.
-
-#### Backend Deployment
-
-1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
-2. Import the project to Vercel
-3. Set the root directory to `server`
-4. Add all required environment variables in Vercel project settings
-5. Deploy
-
-#### Frontend Deployment
-
-1. Import the project to Vercel
-2. Set the root directory to `client`
-3. Add environment variables:
-   - `VITE_BACKEND_URL` - Set to your deployed backend URL
-   - `VITE_CLERK_PUBLISHABLE_KEY` - Your Clerk publishable key
-4. Deploy
-
-**Note**: Make sure to update the `VITE_BACKEND_URL` in your frontend environment variables to point to the deployed backend URL.
 
 ## Features in Detail
 
